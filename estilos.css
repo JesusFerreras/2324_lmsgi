@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+:root {
+    --c1: #00686c;
+    --c2: white;
+    --c3: #edecb3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header {
+    background-color: var(--c1);
+    margin: 10px 0 5px 0;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+h1 {
+    color: var(--c3);
+    text-align: center;
+    width: fit-content;
+    margin: auto 5px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--c1);
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+section {
+    margin: 10px 0 0 0;
+    width: 30%;
+    border: solid var(--c1) 2px;
+}
+
+#UD3 {
+    background-image: url(imagenes/7365.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#UD4 {
+    background-image: url(imagenes/3929637.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+h2 {
+    color: var(--c3);
+    background-color: var(--c1);
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h3 {
+    color: var(--c1);
+}
+
+header, h2, footer {
+    background-image: url(imagenes/picto_infobox_cinema.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ol {
+    background-color: var(--c2);
+    padding: 5px 5px 5px 20px;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+}
+    ul li {
+        padding: 5px;
+        background-color: var(--c3);
+        margin: 5px;
+        font-variant: small-caps;
+    }
+        ul li:hover {
+            background-color: var(--c2);
+        }
+    ol li {
+        display: flex;
+        flex-direction: column;
+        color: var(--c4);
+        background-color: var(--c3);
+        margin: 5px;
+        padding: 0px 0px 10px 0px;
+    }
+
+div {
+    display: flex;
+}
+    main div {
+        flex-grow: 1;
+        padding: 0 5px;
+        justify-content: space-around;
+    }
+    footer div {
+        width: 30%;
+        justify-content: end;
+    }
+
+a {
+    text-decoration: none;
+    text-align: center;
+    margin: auto 0;
+    font-family: "Blinker";
+}
+    ul a {
+        color: var(--c1);
+    }
+    ol a {
+        color: var(--c3);
+        margin: 2px 2px;
+        background-color: var(--c1);
+        width: 90%;
+        padding: 5px;
+        align-self: center;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+        ol a:hover {
+            color: var(--c2);
+        }
+
+footer {
+    margin: 10px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--c1);
+    align-items: center;
+}
+
+p {
+    color: var(--c3);
+}
+
+div img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+
+#home {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}

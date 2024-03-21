@@ -1,0 +1,145 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&family=Vina+Sans&display=swap');
+
+ /* swap permite que el navegador muestre inmediatamente el texto que 
+utiliza la fuente con una fuente del sistema. Una vez que la fuente 
+personalizada está lista,
+reemplaza a la fuente del sistema.
+*/
+
+ /* resetear formatos */
+ * {
+     box-sizing: border-box;
+     /* https: //developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+     margin: 0px;
+     padding: 0px;
+ }
+
+ body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 20px;
+     line-height: 30px;
+ }
+
+ /* titulos de la práctica */
+ h2 {
+     font-family: 'Anton', sans-serif;
+     font-weight: normal;
+     padding: 20px;
+     border: solid 1px black;
+     max-width: fit-content;
+     margin: 0px auto;
+     box-shadow: 5px 5px 0px 0px black;
+     letter-spacing: 3px;
+
+ }
+
+ /* formato a las tablas */
+ table {
+     width: 100%;
+     max-width: 500px;
+     margin: 70px auto;
+     border: solid 3px #000000;
+     background-color: white;
+     border-collapse: collapse;
+     letter-spacing: 1px;
+     font-family: 'open sans', sans-serif;
+ }
+
+ tr {
+     border-bottom: solid 1px black;
+ }
+
+ tr:nth-child(1) {
+     font-family: 'Vina Sans', sans-serif;
+     border-bottom: solid 3px black;
+ }
+
+ th {
+     font-family: 'Anton', sans-serif;
+     font-weight: lighter;
+     text-align: left;
+     background-color: green;
+     padding: 5px;
+     color: white;
+     letter-spacing: 3px;
+     font-size: 25px;
+
+ }
+
+ td {
+     padding: 5px;
+ }
+
+ /* formato a la listas */
+ ul {
+     width: fit-content;
+     max-width: 500px;
+     margin: 70px auto;
+     border: solid 0px #000000;
+     list-style: square;
+ }
+
+ /* contenido principal de la web*/
+ .dashboard {
+     display: flex;
+     flex-flow: row wrap;
+     padding: 0px;
+
+ }
+
+ .profile {
+     border-bottom: solid 6px #000000;
+     width: 100%;
+     min-height: 30vh;
+     text-align: center;
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     padding: 50px 10px;
+ }
+
+ .profile h2 {
+     font-family: 'Anton', sans-serif;
+     font-size: 100px;
+     line-height: 130px;
+     background-color: blue;
+     color: #ffffff;
+ }
+
+ .profile p {
+     font-size: 100px;
+     line-height: 130px;
+     font-family: 'Vina Sans', sans-serif;
+ }
+
+ .schedule-table {
+     border-right: solid 1px #000000;
+     border-bottom: solid 6px #000000;
+     width: 50%;
+     min-height: 30vh;
+     padding: 50px 10px;
+     background-color: #f0c11a;
+ }
+
+ .schedule-table h2 {
+     background-color: #1aa9f0;
+     border: solid 4px black;
+     transform: rotate(5deg);
+     color: #ffffff;
+ }
+
+ .exercise-table {
+     border-left: solid 1px #000000;
+     border-bottom: solid 6px #000000;
+     background-color: #ce31a1;
+     width: 50%;
+     min-height: 30vh;
+     padding: 50px 10px;
+ }
+
+ .exercise-table h2 {
+     background-color: #31CE5E;
+     border: solid 4px black;
+     color: #ffffff;
+     transform: rotate(-5deg);
+ }

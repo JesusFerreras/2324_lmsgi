@@ -1,0 +1,148 @@
+﻿/*Conjunto*/
+:root {
+    --c1: #FFD046;
+    --c2: white;
+    --c3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1024px;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--c1);
+    background-image: url(../images/Picto_infobox_cinema.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    padding: 10px;
+    height: 75px;
+    color: var(--c2);
+    margin-bottom: 10px;
+}
+h2 {
+    border-width: 0 0 3px 0;
+    border-color: var(--c1);
+    border-style: solid;
+}
+
+nav {
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--c3);
+}
+a {
+    padding: 5px;
+    color: var(--c3);
+    text-decoration: none;
+}
+nav a::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav a:hover, .activo {
+    background-color: var(--c1);
+    opacity: 80%;
+    color: var(--c2);
+}
+
+section {
+    width: 70%;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border-top: solid var(--c3);
+    background-color: var(--c1);
+    background-image: url(../images/Picto_infobox_cinema.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*Index*/
+.d01 {
+    margin: 10px 0;
+}
+.f01 {
+    border: solid var(--c1);
+    width: 30%;
+}
+
+/*Reparto*/
+.d02 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.f02 {
+    width: 30%;
+    margin: 20px 5px;
+    border: solid var(--c1);
+}
+
+/*Premios*/
+table {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+td {
+    border: solid var(--c1);
+    padding: 20px 5px;
+    text-align: center;
+}
+
+thead td {
+    background-color: var(--c1);
+    color: var(--c2);
+    border-color: var(--c2);
+    font-weight: bold;
+}
+
+tfoot td {
+    background-color: var(--c1);
+    color: var(--c2);
+    border-color: var(--c2);
+    font-weight: bold;
+    background-image: url(../images/Picto_infobox_cinema.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: end;
+    padding: 10px 100px;
+}
+
+.gan {
+    background-color: var(--c3);
+    color: var(--c2);
+    opacity: 80%;
+}
+.pen {
+    background-color: var(--c3);
+    color: var(--c2);
+    opacity: 60%;
+}

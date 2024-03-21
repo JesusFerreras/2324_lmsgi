@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title> EL PAÍS  Jesús Ferreras </title>
+        <link> https://elpais.com </link>
+        <description> Noticias de última hora </description>
+        <category> c01 </category>
+        <language> es </language>
+        <pubDate> Thu, 18 Jan 2024 09:55:29 GMT </pubDate>
+        <item>
+            <title> Trump arrasa en los 'caucus' de Iowa </title>
+            <link> https://elpais.com/internacional/2024-01-16/trump-arrasa-en-los-caucus-de-iowa.html </link>
+            <description> <![CDATA[<em> La victoria del expresidente le refuerza como favorito indiscutible a la nominación para las presidenciales, mientras DeSantis aventaja a Haley por la segunda plaza </em>]]> </description>
+            <category> i01 </category>
+            <pubDate> Thu, 18 Jan 2024 09:55:29 GMT </pubDate>
+            <enclosure length="75.3kB" type="image/jpg" url="https://imagenes.elpais.com/resizer/f6g1iIONClOqxdDgZeeYXPKXCws=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/LJSAML22LRHODIHWFZCY5NAZBI.JPG"/>
+        </item>
+        <item>
+            <title> La amenaza de la desinformación en el gran ciclo electoral de 2024 inquieta al foro de Davos </title>
+            <link> https://elpais.com/internacional/2024-01-16/la-amenaza-de-la-desinformacion-en-el-gran-ciclo-electoral-de-2024-inquieta-al-foro-de-davos.html </link>
+            <description> <![CDATA[<em> El impacto de los contenidos falsos y divisivos en una época de fuerte polarización, nuevas y potentes tecnologías y democracias frágiles destaca entre los riesgos detectados por la cita anual de Suiza </em>]]> </description>
+            <category> i02 </category>
+            <pubDate> Thu, 18 Jan 2024 09:55:29 GMT </pubDate>
+            <enclosure length="25.4kB" type="image/jpg" url="https://imagenes.elpais.com/resizer/J5Z2mKs33MNntusJumR05hI2Z-M=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/BUA4IXECVZB4VAONMAF5DONL2U.jpg"/>
+        </item>
+        <item>
+            <title> Irán ataca con misiles balísticos la capital del Kurdistán iraquí y mata a cuatro civiles </title>
+            <link> https://elpais.com/internacional/2024-01-16/iran-ataca-con-misiles-balisticos-la-capital-del-kurdistan-iraqui-y-mata-a-cuatro-civiles.html </link>
+            <description> <![CDATA[<em> La Guardia Revolucionaria Iraní asegura que el ataque tenía como objetivo un centro de espionaje israelí, aunque destruyó la residencia de un destacado empresario kurdo </em>]]> </description>
+            <category> i03 </category>
+            <pubDate> Thu, 18 Jan 2024 09:55:29 GMT </pubDate>
+            <enclosure length="132kB" type="image/jpg" url="https://imagenes.elpais.com/resizer/ZP4DpuYO4MeiVSYvg5p59AqmfH8=/1200x675/cloudfront-eu-central-1.images.arcpublishing.com/prisa/HMT7LFDNSBHPHEJRW26WXBNM2E.jpg"/>
+        </item>
+    </channel>
+</rss>

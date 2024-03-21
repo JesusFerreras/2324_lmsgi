@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root {
+    --color1:#1c0b2b;
+    --color2:#301c41;
+    --color3:#413b6b;
+    --color4:#5c65c0;
+    --color5:#6f95ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h2 {
+    font-family: "Anton", sans-serif;
+    padding: 20px;
+    border: 1px solid black;
+    max-width: fit-content;
+    margin: 0 auto;
+    letter-spacing: 3px;
+    box-shadow: 5px 5px 0 0 black;
+}
+
+table {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+tr {
+    border: 1px solid black;
+}
+th {
+    font-family: "Anton", sans-serif;
+    background-color: green;
+    padding: 5px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+td {
+    padding: 5px;
+}
+
+ul {
+    width: fit-content;
+    max-width: 500px;
+    margin: 70px auto;
+    list-style: square;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile {
+    border: 6px solid black;
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,133 @@
+﻿:root {
+    --c1:#FF4500;
+    --c2:lightblue;
+    --c3:green;
+    --c4:#E9967A;
+    --c5:#9932CC;
+    --c6:#04B404;
+    --c7:#FFB973;
+    --c8:#008000;
+    --c9:#8B008B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-image: url(../images/Le_petit_prince.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: var(--c7);
+    color: var(--c1);
+    font-variant: small-caps;
+}
+
+div {
+    padding: 9px;
+    width: 75%;
+}
+
+.par1 {
+    background-color: var(--c2);
+    color: var(--c8);
+    margin: 18px 0;
+    font-weight: bold;
+    width: 75%;
+}
+
+.static {
+    border: solid var(--c4) 3px;
+}
+.relative {
+    border: dotted var(--c5) 3px;
+    position: relative;
+    left: 60px;
+}
+.fixed {
+    background-color: var(--c7);
+    border: dashed var(--c8) 3px;
+    position: fixed;
+    width: 25%;
+    bottom: 5%;
+    left: 75%;
+}
+.relative1 {
+    border: solid var(--c3) 3px;
+    position: relative;
+    height: 150px;
+}
+.absolute1 {
+    border: solid var(--c6) 3px;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+}
+.img1 {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+.sticky {
+    border: solid var(--c6) 3px;
+    border-radius: 50px;
+    background-color: var(--c8);
+    color: var(--c6);
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.container {
+    border: solid var(--c9) 3px;
+    position: relative;;
+}
+
+.container div {
+    background-color: var(--c7);
+    border: solid var(--c9) 3px;
+    color: var(--c9);
+    font-weight: bold;
+    width: fit-content;
+    font-variant: small-caps;
+}
+.img2 {
+    width: 100%;
+}
+
+.topleft {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+.topright {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+}
+.bottomright {
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+}

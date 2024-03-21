@@ -1,0 +1,32 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+p {
+    height: fit-content;
+    max-width: 1024px;
+    background-color: lightgray;
+    border: solid gray 1px;
+    text-align: center;
+    font-style: italic;
+    padding: 2px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 20px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}

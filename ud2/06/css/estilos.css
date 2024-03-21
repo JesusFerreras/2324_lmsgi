@@ -1,0 +1,89 @@
+:root {
+    --color1:#1c0b2b; /*Encabezado*/
+    --color2:#301c41; /*Pie de página*/
+    --color4:#5c65c0; /*Borde*/
+    --color5:#6f95ff; /*Texto*/
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--color1);
+    color: var(--color5);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    padding: 10px;
+    width: 400px;
+    border-color: var(--color4);
+    border-width: 4px;
+    border-style: none solid solid none;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main div {
+    height: 240px;
+    width: 240px;
+    margin: 20px;
+    border: solid black;
+    border-radius: 16px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+main div:nth-child(1) {
+    background-image: url("../images/punto.png");
+    background-position: center;
+}
+main div:nth-child(2) {
+    background-image: url("../images/punto.png"), url("../images/punto.png");
+    background-position: top left, bottom right;
+}
+main div:nth-child(3) {
+    background-image: url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png");
+    background-position: top left, bottom right, center;
+}
+main div:nth-child(4) {
+    background-image: url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png");
+    background-position: top left, bottom right, top right, bottom left;
+}
+main div:nth-child(5) {
+    background-image: url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png");
+    background-position: top left, bottom right, center, top right, bottom left;
+}
+main div:nth-child(6) {
+    background-image: url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png"), url("../images/punto.png");
+    background-position: top left, bottom right, top right, bottom left, center right, center left;
+}
+
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--color2);
+    color: var(--color5);
+    display: flex;
+    flex-wrap: nowrap;
+    /*clear: both;*/
+}
+footer * {
+    flex-grow: 1;
+}
+footer div {
+    font-weight: bold;
+}
+footer em {
+    text-decoration: underline;
+}

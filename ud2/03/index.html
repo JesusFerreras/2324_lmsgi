@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ud2-03 Jesús Ferreras González </title>
+        <style>
+            table , th , td {
+				border: 1px solid black;
+			}
+        </style>
+        <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1> Plantilla de formulario </h1>
+        </header>
+        <section>
+            <h2> Tipos de input </h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend> Tipo text </legend>
+                    <div> Registra una línea de texto </div>
+                    <div>
+                        <label for="Txt1"> Texto1 </label>
+                        <input type="text" id="Txt1" name="txt1" placeholder="Texto1">
+                    </div>
+                    <div>
+                        <label for="Txt2"> Texto2 </label>
+                        <input type="text" id="Txt2" name="txt2" placeholder="Texto2" size="10">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo radio </legend>
+                    <div> Registra una elección única entre varias opciones </div>
+                    <div>
+                        <input type="radio" id="Rad1" name="rad" value="1" checked>
+                        <label for="Rad1"> Radio 1 </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Rad2" name="rad" value="2">
+                        <label for="Rad2"> Radio 2 </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Rad3" name="rad" value="3">
+                        <label for="Rad3"> Radio 3 </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo checkbox </legend>
+                    <div> Registra una o varias elecciones </div>
+                    <input type="checkbox" id="Che1" name="che1" value="1" checked>
+                    <label for="Che1"> Checkbox 1 </label>
+                    <input type="checkbox" id="Che2" name="che2" value="2">
+                    <label for="Che2"> Checkbox 2 </label>
+                    <input type="checkbox" id="Che3" name="che3" value="3">
+                    <label for="Che3"> Checkbox 3 </label>
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo email </legend>
+                    <div> Registra una dirección de correo electrónico, algunos navegadores la validan automáticamente </div>
+                    <label for="Emai"> Email </label>
+                    <input type="email" name="emai" id="Emai" required maxlength="30" minlength="6">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo tel </legend>
+                    <div> Registra un número de teléfono </div>
+                    <label for="Tele"> Teléfono </label>
+                    <input type="tel" name="tele" id="Tele" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="987 65 43 21">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo date </legend>
+                    <div> Registra una fecha </div>
+                    <input type="date" name="date" id="Date" value="2000-01-01">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo time </legend>
+                    <div> Registra una hora </div>
+                    <input type="time" name="time" id="Time" min="06:00" max="18:00">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo week </legend>
+                    <div> Registra un número de semana y un año </div>
+                    <input type="week" name="week" id="Week">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo month </legend>
+                    <div> Registra un mes y año </div>
+                    <input type="month" name="mont" id="Mont">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo range </legend>
+                    <div> Registra un valor numérico aproximado mediante un deslizador </div>
+                    <label for="Rang"> min </label>
+                    <input type="range" name="rang" id="Rang">
+                    <label for="Rang"> max </label>
+                </fieldset>
+                <fieldset>
+                    <legend> Lista desplegable </legend>
+                    <select name="sele" id="Sele">
+                        <option value="1"> Opción 1 </option>
+                        <option value="2"> Opción 2 </option>
+                        <option value="3"> Opción 3 </option>
+                        <option value="4"> Opción 4 </option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend> Lista de opciones predefinidas </legend>
+                    <input list="Lista" name="list" id="List">
+                    <datalist id="Lista">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend> Textarea </legend>
+                    <div> Puede registrar varias líneas de texto, su tamaño es ajustable </div>
+                    <textarea name="txta" id="Txta" cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo imagen </legend>
+                    <div> Envia los datos introducidos, el botón tiene una imagen en lugar de texto </div>
+                    <input type="image" src="images/foto1.png" alt="Imagen1">
+                    <input type="image" src="images/foto2.png" alt="Imagen2">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo hidden </legend>
+                    <div> Registra datos que no son visibles ni variables para el usuario </div>
+                    <input type="hidden" id="Hidd" name="hidd" value="1">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo search </legend>
+                    <div> Registra una línea de texto, puede ser usada para realizar búsquedas </div>
+                    <input type="search" name="sear" id="Sear">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo url </legend>
+                    <div> Registra una url, algunos navegadores la validan automáticamente </div>
+                    <input type="url" name="url1" id="Url1">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo password </legend>
+                    <div> Registra una línea de texto pero no muestra los caracteres que la componen </div>
+                    <div>
+                        <label for="Usua"> Usuario </label>
+                        <input type="text" id="Usua" name="usua" Value="Usuario" readonly>
+                    </div>
+                    <div>
+                        <label for="Pass"> Contraseña </label>
+                        <input type="password" id="Pass" name="pass">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo number </legend>
+                    <div> Registra un número </div>
+                    <input type="number" name="numb" id="Numb" value="0" step="5">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo file </legend>
+                    <div> Registra un archivo del equipo, incluye el botón "Seleccionar archivo" </div>
+                    <input type="file" name="file" id="File">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo color </legend>
+                    <div> Registra un color </div>
+                    <input type="color" name="colo" id="Colo">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo submit </legend>
+                    <div> Envia los datos introducidos </div>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                <fieldset>
+                    <legend> Tipo reset </legend>
+                    <div> Restablece los datos introducidos </div>
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2> Distintos atributos </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Atributo </th>
+                        <th> Descripción </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> Checked </th>
+                        <td> La opción aparecerá marcada por defecto </td>
+                    </tr>
+                    <tr>
+                        <th> Disabled </th>
+                        <td> Indica que el campo debe ser deshabilitado </td>
+                    </tr>
+                    <tr>
+                        <th> Max </th>
+                        <td> Indica el valor máximo que puede tener una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Maxlength </th>
+                        <td> Indica la cantidad de caracteres máximos que puede tener una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Min </th>
+                        <td> Indica el valor mínimo que puede tener una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Minlength </th>
+                        <td> Indica la cantidad de caracteres mínimos que puede tener una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Pattern </th>
+                        <td> Indica cómo debe ser la expresión regular con la que se compararán los datos </td>
+                    </tr>
+                    <tr>
+                        <th> Readonly </th>
+                        <td> Indica que un campo no puede ser cambiado </td>
+                    </tr>
+                    <tr>
+                        <th> Required </th>
+                        <td> Indica que el campo debe ser rellenado </td>
+                    </tr>
+                    <tr>
+                        <th> Size </th>
+                        <td> Indica la cantidad de caracteres que debe tener una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Step </th>
+                        <td> Indica el intervalo por el cual debe cambiar una variable </td>
+                    </tr>
+                    <tr>
+                        <th> Value </th>
+                        <td> Indica el valor por defecto que tendrá una variable </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer><address> Jesús Ferreras González  Página actualizada: 02/11/2023 </address></footer>
+    </body>
+</html>

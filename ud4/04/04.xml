@@ -1,0 +1,32 @@
+<?xml version="1.0" encodint="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum>
+    <nombre></nombre>
+    <apellido></apellido>
+    <anyo_nac></anyo_nac>
+    <residencia>
+        <ciudad></ciudad>
+        <pais></pais>
+    </residencia>
+    <datos>
+        <tlfn></tlfn>
+        <correo></correo>
+        <perfil></perfil>
+        <descr></descr>
+        <competencia>
+            <nom_com></nom_com>
+            <nivel></nivel>
+        </competencia>
+        <formacion>
+            <titulo></titulo>
+            <centro></centro>
+            <anyo_tit></anyo_tit>
+        </formacion>
+        <experiencia>
+            <puesto></puesto>
+            <empresa></empresa>
+            <anyo_ini></anyo_ini>
+            <anyo_fin></anyo_fin>
+        </experiencia>
+    </datos>
+</curriculum>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+:root {
+    --color1:#1c0b2b;
+    --color2:#301c41;
+    --color3:#413b6b;
+    --color4:#5c65c0;
+    --color5:#6f95ff;
+}
+
+* {
+    font-family: "Open Sans";
+    line-height: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+h1, h3 {
+    border: solid black 2px;
+    width: max-content;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+h2 {
+    margin-top: 0;
+}
+h3 {
+    font-family: "Anton";
+    letter-spacing: 3px;
+}
+.h01 {
+    background-color: var(--color4);
+    color: var(--color1);
+    rotate: 7grad;
+    box-shadow: 5px 5px 0px 0px black;
+}
+.h02 {
+    background-color: var(--color2);
+    color: var(--color5);
+    rotate: -7grad;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.d01, .d02 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.d03 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+}
+.d01 .d03:nth-child(1) {
+    background-color: var(--color2);
+    border: solid black;
+    border-width: 4px 4px 4px 0;
+}
+.d01 .d03:nth-child(2) {
+    background-color: var(--color4);
+    border: solid black;
+    border-width: 4px 0 4px 4px;
+}
+
+p, ul {
+    margin: 0;
+}
+p b {
+    color: var(--color3);
+}
+
+table {
+    border: solid black 2px;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+}
+th {
+    background-color: var(--color3);
+    color: var(--color5);
+    text-align: left;
+}
+td {
+    border-style: solid none;
+    border-width: 2px;
+    background-color: white;
+}

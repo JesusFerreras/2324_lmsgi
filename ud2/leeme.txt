@@ -1,0 +1,8 @@
+01
+	Ejercicio ajustado al enunciado
+02
+	Comentarios movidos debajo de DOCTYPE
+	Footer completado
+	h1 cambiado por h2
+06
+	Comentarios añadidos

@@ -1,0 +1,23 @@
+<!ELEMENT manual (servicio,descripcion?,version,fecha_actualizacion?,requisitos_del_sistema,otros_datos,pasos_de_instalacion)>
+    <!ELEMENT servicio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT version (#PCDATA)>
+    <!ELEMENT fecha_actualizacion (#PCDATA)>
+    <!ELEMENT requisitos_del_sistema (sistema_operativo,memoria_ram,espacio_en_disco,puertos_disponibles)>
+        <!ELEMENT sistema_operativo (#PCDATA)>
+        <!ELEMENT memoria_ram (#PCDATA)>
+            <!ATTLIST memoria_ram medida (Gb) #REQUIRED>
+        <!ELEMENT espacio_en_disco (#PCDATA)>
+            <!ATTLIST espacio_en_disco medida (Gb|Mb|Tb|Pb) "Gb">
+        <!ELEMENT puertos_disponibles (puerto+)>
+            <!ELEMENT puerto (#PCDATA)>
+    <!ELEMENT otros_datos (url*)>
+        <!ELEMENT url (#PCDATA)>
+            <!ATTLIST url pagina (oficial|wiki|doc|repositorio) "oficial">
+    <!ELEMENT pasos_de_instalacion (paso+)>
+        <!ELEMENT paso (comando,descripcionP)>
+            <!ELEMENT comando (#PCDATA)>
+            <!ELEMENT descripcionP (#PCDATA)>
+    <!ATTLIST manual codigo CDATA #REQUIRED>
+    <!ATTLIST manual xmlns:xsi CDATA #IMPLIED>
+    <!ATTLIST manual xsi:noNamespaceSchemaLocation CDATA #REQUIRED>

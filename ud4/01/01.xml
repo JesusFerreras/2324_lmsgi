@@ -1,0 +1,9 @@
+<?xml version="1.0" encodint="UTF-8"?>
+<!DOCTYPE mail SYSTEM "01.dtd">
+<mail>
+    <remitente> pepe@gmail.com </remitente>
+    <destinatario> laura@gmail.com </destinatario>
+    <destinatario> maria@gmail.com </destinatario>
+    <fecha_mensaje></fecha_mensaje>
+    <mensaje></mensaje>
+</mail>
